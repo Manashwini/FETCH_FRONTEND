@@ -29,10 +29,10 @@ jobs:
         node-version: [14.x, 16.x, 18.x]
 
     steps:
-      - name: Checkout repository 🛎️
+      - name: Checkout repository 🛎
         uses: actions/checkout@v3
 
-      - name: Use Node.js ${{ matrix.node-version }} 🛠️
+      - name: Use Node.js ${{ matrix.node-version }} 
         uses: actions/setup-node@v3
         with:
           node-version: ${{ matrix.node-version }}
@@ -60,7 +60,7 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-      - name: Checkout repository 🛎️
+      - name: Checkout repository 
         uses: actions/checkout@v3
 
       - name: Setup Pages
@@ -72,7 +72,7 @@ jobs:
           name: build-artifact
           path: "./dist"
 
-      - name: Deploy 🚀
+      - name: Deploy 
         uses: JamesIves/github-pages-deploy-action@v4
         with:
           branch: deploy
