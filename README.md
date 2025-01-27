@@ -202,9 +202,6 @@ body: {
     size?: number,
     from?: number
 }
-...
-Return Value
-Returns an object with the following properties:
 
 results - an array of Location objects
 total - the total number of results for the query (not just the current page)
